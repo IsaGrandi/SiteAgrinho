@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --preto:#000000;
+    --background-image-color: linear-gradient(45deg, #65f558, #36ac2c);
+    --header-color:#206313;
+    --branco:#fff;
+    --section-color:#a2f46b;
+    --button-color:#95f113;
+    --header-border-color:#7aff6b;
+    --button-hover-color:#99ff40;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: var(--background-image-color);
+    padding: 20px;
+}
+
+header {
+    background-color: var(--header-color);
+    color: var(--branco);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 6px solid var(--header-border-color);
+}
+
+
+.desenho-agrinho {
+    width: 100%;
+    padding: 20px 1px;
+}
+
+.informações-agrícolas {
+    text-align: center;
+}
+
+section {
+    margin: 40px 6px;
+    padding: 50px;
+    background-color: var(--section-color);
+    border-radius: 7px;
+    display:flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.section-tec {
+    flex-direction: row;
+    display: flex;
+}
+
+.section-sus {
+    align-items: center;
+}
+
+.Text-Tec, .Sus-texto-2, .Text-Educação {
+    flex: 1;
+    padding-right: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.trator1, .trator2  {
+width: 30%;
+display: row;
+flex-wrap: wrap;
+gap: 20px;
+flex-direction: column;
+padding: 20px;
+align-items: center;
+
+}
+
+.campo1 {
+    width: 30%;
+display: row;
+flex-wrap: wrap;
+gap: 20px;
+flex-direction: column;
+padding: 20px;
+align-items: center;
+     }
+
+.campo2 {
+    width: 30%;
+    display: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}    
+
+header h1 {
+    font-size: 35px;
+    margin-left: 60px;
+    font-family: Georgia, Times, 'Times New Roman', serif
+}
+
+.titulo {
+    text-shadow:
+    -2px -2px 0 var(--preto),  
+    2px -2px 0 var(--preto),
+    -2px 2px 0 var(--preto),
+    2px 2px 0 var(--preto);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.botão-tec {
+    background-color:var(--button-color);
+    padding: 15px 40px;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+
+.botão-tec:hover {
+    background-color: var(--button-hover-color);
+}
+
+.botão-sus {
+    background-color:var(--button-color);
+    padding: 15px 25px;
+    margin-right: 15px;
+    border-radius: 20px;
+ }
+
+ .botão-sus:hover {
+    background-color: var(--button-hover-color);
+}
+
+.botão-edu {
+     background-color:var(--button-color);
+     padding: 15px 43px;
+     margin-right: 15px;
+     border-radius: 20px;
+ }
+
+ .botão-edu:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: var(--header-color);
+    color: var(--branco);
+}
+
+@media screen and (min-width: 1024px) {
+    .titulo {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+      font-weight: 700;
+
+    }
+    .botão-tec,
+    .botão-sus,
+    .botão-edu {
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      font-weight:400;
+
+    }
+  
+  }
+    
